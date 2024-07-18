@@ -14,24 +14,23 @@ public class Main
 		int t = s.nextInt();
 		
 		for(int i = 0; i < t; i++){
-		    
-		    anos = 0;
-		    A = s.nextInt();
-    		B = s.nextInt();
-    		ga = s.nextDouble();
-    		gb = s.nextDouble();
+			anos = 0;
+			A = s.nextInt();
+    			B = s.nextInt();
+    			ga = s.nextDouble();
+    			gb = s.nextDouble();
     		
         	while(A <= B){
+        		A += ((A * ga) / 100);
+        		B += ((B * gb) / 100);
+        		anos++;
         	    
-        	    A += ((A * ga) / 100);
-        	    B += ((B * gb) / 100);
-        	    anos++;
-        	    
-        	    if(anos > 100){
-        	        break;
+        	if(anos > 100){
+        		break;
         	    }
         
         	}
+			
         	if(anos > 100){
         	   System.out.println("Mais de 1 seculo.");
         	}
