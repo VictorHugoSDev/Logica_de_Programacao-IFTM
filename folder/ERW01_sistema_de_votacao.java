@@ -1,3 +1,22 @@
+/* Faça um programa em Java para ler um número indeterminado de votos, contendo cada um, o número do candidato. O último dado, que não entrará nos cálculos, contém um valor negativo. 
+Computar os votos da eleição. As opções de voto são:
+
+1. Candidato 1;
+2. Candidato 2;
+3. Candidato 3;
+4. Voto Nulo;
+5. Voto em branco.
+
+Ao final, imprimir a quantidade de votos de cada candidato bem como o número de votos em branco e nulo.
+
+obs: considere que só serão entrado dados negativos ou entre 1 e 5. 
+
+Entrada
+A entrada conterá vários números inteiros. Caso o valor informado seja menor que zero, o programa deve parar. 
+
+Saída
+Imprima a quantidade de votos de cada candidato bem como o número de votos em branco e nulo.
+*/
 import java.util.Scanner;
 
 public class Main
