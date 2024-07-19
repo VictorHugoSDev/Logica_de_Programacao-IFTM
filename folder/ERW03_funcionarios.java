@@ -21,3 +21,49 @@ um número real(double) correspondente ao salário e um caractere correspondente
 Saída
 Imprima uma linha contendo a média salarial do grupo, uma linha contendo a maior e menor idade do grupo e uma linha contendo a quantidade de mulheres com salário acima de 3000.00. Siga o formato dos exemplos abaixo.
 */
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		int entrevistados = 0;
+		double somaSalarios = 0.0;
+		int maior = Integer.MIN_VALUE;
+		int menor = Integer.MAX_VALUE;
+		int mulheres = 0;
+		
+		char continuar = 's';
+		
+		while(continuar == 's'){
+		    int idade = s.nextInt();
+		    char sexo = s.next().charAt(0);
+		    double salario = s.nextDouble();
+		    
+		    entrevistados++;
+		    somaSalarios+=salario;
+		    
+		    if(idade > maior){
+		        maior = idade;
+		    }
+		    
+		    if(idade < menor){
+		        menor = idade;
+		    }
+		    
+		    if(sexo == 'f' && salario > 3000){
+		        mulheres++;
+		    }
+		    
+		    continuar = s.next().charAt(0);
+		}
+	    
+	 double mediaSalarios = somaSalarios/entrevistados;
+	 
+	 System.out.printf("Media salarios = R$ %.2f%n",mediaSalarios);
+	 System.out.println("Menor e maior idade = " + menor + " e " + maior);
+	 System.out.println("Salarios de mulheres acima de R$ 3000.00 = " + mulheres);
+	}
+}
+
