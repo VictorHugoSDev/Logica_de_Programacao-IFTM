@@ -23,12 +23,10 @@ public class Main
 		 double salario = 0;
 		
 		while(true){
-		    salarioMedio = 0;
 		    salario = s.nextDouble();
 		    
 		    if((salario > 0) && (salario < 100000)){
 		        acumulado += salario;
-		        salarioMedio = 0;
 		        contador++;
 		    }
 		    else{
