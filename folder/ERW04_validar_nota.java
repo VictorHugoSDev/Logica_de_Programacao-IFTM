@@ -8,3 +8,24 @@ Vários números reais(double) fornecidos em sequencias, cada um representando u
 Saída
 Para cada nota imprima "nota invalida", se a nota não for válida ou imprima a própria nota, se válida, nesse caso finalize o programa.
 */
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		
+		while(true){
+		    double x = s.nextDouble();
+		    
+		    if((x >= 0 && x <= 10) || (x >= 100 && x <= 200)){
+		        System.out.println(x);
+		        break;
+		    }
+		    else{
+		        System.out.println("nota invalida");
+		    }
+		}
+	}
+}
