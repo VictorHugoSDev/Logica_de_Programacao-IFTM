@@ -1,3 +1,14 @@
+/*
+Faça uma função/procedimento (sem retorno) para receber como parâmetro um vetor e imprimir os dados formatados (veja exemplo abaixo). 
+Faça o programa em java para a entrada dos dados(tamanho do vetor e cada elemento dele) e chame a função criada.
+(Obrigatório a utilização de funções)
+
+Entrada:
+Um número inteiro n correspondente ao tamanho do vetor e então n números inteiros que irão preencher o vetor.
+
+Saída:
+Uma linha apresentando os números do vetor, conforme exemplo abaixo
+*/
 import java.util.Scanner;
 
 public class Main
